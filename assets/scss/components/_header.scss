@@ -1,3 +1,52 @@
 .pre-header {
 	display: none;
 }
+
+.menu-responsivo {
+	img {
+		width: 64px;
+		height: 64px;
+	}
+
+	@include tamanho-tela(desktop) {
+		display: none;
+	}
+}
+
+.header {
+	background-color: $c-ter;
+	padding: 1em;
+
+	.p-header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		padding: 0;
+		margin: 0;
+
+		img {
+			width: 60px;
+
+			@include tamanho-tela(tablet) {
+				width: 42px;
+			}
+		}
+	}
+
+	.itens-menu {
+		display: none;
+
+		a {
+			color: $dark;
+		}
+
+		.list-m {
+			width: 100%;
+			position: relative;
+			background-color: $light;
+		}
+	}
+}

@@ -47,26 +47,33 @@
           </div>
         </div>
         <div class="header">
-          <h1>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
-          </h1>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="#produto">Nosso Produto</a>
-            </li>
-            <li>
-              <a href="#servicos">Serviços</a>
-            </li>
-            <li>
-              <a href="#contato">Contato</a>
-            </li>
-          </ul>
+          <div class="p-header">
+            <h1 class="logo">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
+            </h1>
+            <div class="menu-responsivo" data-menu>
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-menu.svg" alt="" aria-hidden="true">
+            </div>
+          </div>
+          <div class="itens-menu">
+            <ul class="list-m">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="#produto">Nosso Produto</a>
+              </li>
+              <li>
+                <a href="#servicos">Serviços</a>
+              </li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <div class="titulo-banner">

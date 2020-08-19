@@ -4,3 +4,36 @@ $c-sec: #E8E8E8;
 $c-ter: #5F5F5F;
 $dark: #000000;
 $light: #FFFFFF;
+
+// Consulta de media queries
+@mixin tamanho-tela($size) {
+	@if $size==apenas-celular {
+		@media (max-width: 575.98px) {
+			@content;
+		}
+	}
+
+	@else if $size==celular {
+		@media (min-width: 576px) {
+			@content;
+		}
+	}
+
+	@else if $size==tablet {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@else if $size==desktop {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+
+	@else if $size==desktop-up {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}
