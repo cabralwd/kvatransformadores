@@ -46,7 +46,7 @@
             </p>
           </div>
         </div>
-        <div class="header">
+        <div class="header header-f">
           <div class="p-header">
             <h1 class="logo">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
@@ -57,21 +57,21 @@
           </div>
           <div class="itens-menu">
             <ul class="list-m">
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#sobre">Sobre</a>
-              </li>
-              <li>
-                <a href="#produto">Nosso Produto</a>
-              </li>
-              <li>
-                <a href="#servicos">Serviços</a>
-              </li>
-              <li>
-                <a href="#contato">Contato</a>
-              </li>
+              <a href="#home">
+                <li>Home</li>
+              </a>
+              <a href="#sobre">
+                <li>Sobre</li>
+              </a>
+              <a href="#produto">
+                <li>Nosso Produto</li>
+              </a>
+              <a href="#servicos">
+                <li>Serviços</li>
+              </a>
+              <a href="#contato">
+                <li>Contato</li>
+              </a>
             </ul>
           </div>
         </div>
