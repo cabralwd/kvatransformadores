@@ -20,3 +20,61 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div class="container">
+    <div class="banner">
+      <header>
+        <div class="pre-header">
+          <ul>
+            <li>
+              <a href="https://fb.com/kvatransformadores" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kvaconcordia" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></a>
+            </li>
+          </ul>
+          <div>
+            <p>
+              Email: <a href="" target="_self">kvaind@yahoo.com.br</a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Telefone: <a href="tel:+5549999286641" target="_self">(49) 9 9928-6641</a> <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp">
+            </p>
+          </div>
+        </div>
+        <div class="header">
+          <h1>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
+          </h1>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#produto">Nosso Produto</a>
+            </li>
+            <li>
+              <a href="#servicos">Serviços</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="titulo-banner">
+        <h1>KVA transformadores</h1>
+        <p>Transformando sua Energia.</p>
+      </div>
+      <div>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow.svg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
