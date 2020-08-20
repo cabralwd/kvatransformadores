@@ -4,9 +4,9 @@
 <?php get_header(); ?>
 
 <div class="container">
-  <h2>A energia move o mundo, não deixe seu negócio parar!</h2>
-
-  <div class="sobre">
+  
+  <div class="sobre row">
+    <h2>A energia move o mundo, não deixe seu negócio parar!</h2>
     <div class="conteudo">
       <p>A KVA Transformadores teve seu início em 1993, localizada na cidade de Concórdia-SC,
         onde encontra-se até hoje.
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div class="produto">
+  <div class="produto row">
     <h2>Nosso produto</h2>
     <h3>Transformadores recondicionados</h3>
 
@@ -67,7 +67,7 @@
     </div>
   </div>
 
-  <div class="servicos">
+  <div class="servicos row">
     <h2>Serviços</h2>
     <h3>Oferecemos a melhor qualidade em:</h3>
 
@@ -114,7 +114,7 @@
     </div>
   </div>
 
-  <div class="contato">
+  <div class="contato row">
     <h2>Contato</h2>
 
     <div class="formulario-contato">

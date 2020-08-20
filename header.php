@@ -73,15 +73,34 @@
                 <li>Contato</li>
               </a>
             </ul>
+            <ul class="list-p">
+              <li class="facebook">
+                <a href="https://fb.com/kvatransformadores" target="_blank">
+                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></div>
+                </a>
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/kvaconcordia" target="_blank">
+                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></div>
+                </a>
+              </li>
+              <li class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank">
+                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
-      <div class="titulo-banner">
-        <h1>KVA transformadores</h1>
-        <p>Transformando sua Energia.</p>
-      </div>
-      <div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow.svg" alt="" aria-hidden="true">
+      <div class="row">
+        <div class="titulo-banner">
+          <h1>KVA transformadores</h1>
+          <p>Transformando sua Energia.</p>
+        </div>
+        <div>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow.svg" alt="" aria-hidden="true">
+        </div>
       </div>
     </div>
   </div>
