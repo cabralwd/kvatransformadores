@@ -36,6 +36,10 @@ module.exports = {
 	imgSRC: './assets/images/**/*', // Source folder of images which should be optimized and watched. You can also specify types e.g. raw/**.{png,jpg,gif} in the glob.
 	imgDST: './public/imgs/', // Destination folder of optimized images. Must be different from the imagesSRC folder.
 
+	// Fonts copy.
+	fontSRC: './assets/fonts/**/*',
+	fontDST: './public/fonts/',
+
 	// Watch files paths.
 	watchStyles: './assets/scss/**/*.scss', // Path to all *.scss files inside css folder and inside them.
 	watchJsVendor: './assets/js/vendor/*.js', // Path to all vendor JS files.
