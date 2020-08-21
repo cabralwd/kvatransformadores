@@ -3,8 +3,11 @@
 }
 
 header {
+	position: fixed;
 	height: 70px;
 	width: 100%;
+	top: 0;
+	z-index: 999;
 }
 
 .menu-responsivo {
@@ -64,7 +67,6 @@ header {
 				padding: .5em 1em;
 				text-transform: uppercase;
 				font-size: 1.125em;
-				font-weight: bold;
 				text-align: right;
 			}
 		}

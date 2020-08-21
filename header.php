@@ -12,7 +12,7 @@
   <title><?php bloginfo('name'); ?></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/public/css/main.min.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/public/css/main.css">
   <?php wp_head(); ?>
 </head>
 
@@ -93,12 +93,12 @@
           </div>
         </div>
       </header>
-      <div class="row">
+      <div class="content-banner row">
         <div class="titulo-banner">
           <h1>KVA transformadores</h1>
-          <p>Transformando sua Energia.</p>
+          <p><span>Transformando sua</span> <br><span>Energia</span>.</p>
         </div>
-        <div>
+        <div class="next-section">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow.svg" alt="" aria-hidden="true">
         </div>
       </div>

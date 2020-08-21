@@ -1,6 +1,9 @@
 @import 'helpers/reset';
 @import 'helpers/normalize';
+@import 'helpers/fonts';
 @import 'helpers/variables';
 @import 'components/wp';
-@import 'components/header';
 @import 'components/base';
+@import 'components/header';
+@import 'components/banner';
+@import 'components/conteudo';

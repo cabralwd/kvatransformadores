@@ -6,7 +6,7 @@
 <div class="container">
   
   <div class="sobre row">
-    <h2>A energia move o mundo, não deixe seu negócio parar!</h2>
+    <h2 class="subtitulo">A energia move o mundo, não deixe seu negócio parar! <span class="sep"></span></h2>
     <div class="conteudo">
       <p>A KVA Transformadores teve seu início em 1993, localizada na cidade de Concórdia-SC,
         onde encontra-se até hoje.
@@ -29,6 +29,7 @@
       <div class="arrow-slide left"></div>
       <div class="images">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
+        <p>Mais de 25.000 unidades entregues</p>
       </div>
       <div class="arrow-slide right"></div>
     </div>
