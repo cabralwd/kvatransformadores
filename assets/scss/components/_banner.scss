@@ -1,38 +1,42 @@
 .banner {
-  margin-top: 70px;
-  height: 100vh;
-  background-image: url('../../public/imgs/foto-banner-1.jpg');
-  background-size: cover;
-  background-position: center;
+	margin-top: 70px;
+	height: 100vh;
+	background-image: url('../../public/imgs/foto-banner-1.jpg');
+	background-size: cover;
+	background-position: center;
 
-  .content-banner {
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
+	.content-banner {
+		height: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
-  .titulo-banner {
-    color: $c-pri;
-    font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
-    letter-spacing: .2em;
-    font-size: .8em;
+	.titulo-banner {
+		color: $c-pri;
+		font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-style: normal;
+		letter-spacing: .09em;
+		font-size: .8em;
 
-    p {
-      font-size: 1.6em;
-      span:first-child {
-        color: $light;
-      }
-      span:last-child {
-        font-size: 1.1em;
-      }
-    }
-  }
+		p {
+			font-size: 1.6em;
 
-  .next-section {
-    img {
-      width: 3em;
-      margin-bottom: 6em;
-    }
-  }
+			span:first-child {
+				color: $light;
+			}
+
+			span:last-child {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.next-section {
+		img {
+			width: 3em;
+			margin-bottom: 6em;
+		}
+	}
 }

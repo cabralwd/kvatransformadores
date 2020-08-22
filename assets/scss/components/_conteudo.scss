@@ -1,51 +1,390 @@
 .subtitulo {
-  font-size: 1.225em;
-  font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
-  letter-spacing: .1em;
-  line-height: 1.4em;
-  margin-bottom: 2.5em;
-  
-  .sep {
-    position: relative;
-    width: 140px;
-    height: 8px;    
-    display: block;
-    margin: 10px auto 0px ;
-    background-color: $c-pri;
+	font-size: 1.225em;
+	font-family: 'Modern Machine',
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: .1em;
+	line-height: 1.4em;
+	margin-bottom: 2.5em;
 
-    &::after {
-      content: '';
-      width: 70px;
-      height: 8px;
-      bottom: 0;
-      right: 3px;
-      transform: skew(-40deg, 0deg);
-      position: absolute;
-      display: block;
-      margin: 10px auto 0px ;
-      background-color: $c-ter;
-    }
+	.sep {
+		position: relative;
+		width: 140px;
+		height: 8px;
+		display: block;
+		margin: 10px auto 0px;
+		background-color: $c-pri;
 
-    &::before {
-      content: '';
-      width: 70px;
-      height: 8px;
-      bottom: 0;
-      right: 0px;
-      position: absolute;
-      display: block;
-      margin: 10px auto 0px ;
-      background-color: $c-ter;
-    }
-  }
+		&::after {
+			content: '';
+			width: 70px;
+			height: 8px;
+			bottom: 0;
+			right: 3px;
+			transform: skew(-40deg, 0deg);
+			position: absolute;
+			display: block;
+			margin: 10px auto 0px;
+			background-color: $c-ter;
+		}
+
+		&::before {
+			content: '';
+			width: 70px;
+			height: 8px;
+			bottom: 0;
+			right: 0px;
+			position: absolute;
+			display: block;
+			margin: 10px auto 0px;
+			background-color: $c-ter;
+		}
+	}
 
 }
 
+.subtitulo-two {
+	font-family: 'Modern Machine',
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: $light;
+	padding: 20px 0px;
+	font-size: 1.6em;
+	letter-spacing: .05em;
+	width: 100%;
+	height: auto;
+	background-color: $c-pri;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 60px;
+}
+
+.subtitulo-three {
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.6em;
+	line-height: 1.1;
+	margin-bottom: 45px;
+}
+
+// área sobre
 .sobre {
-  margin-top: 3.75rem;
-  p {
-    margin-bottom: 2em;
-    color: $c-qua;
-    font-size: 1.125em;
-  }
+	margin-top: 3.75rem;
+
+	p {
+		margin-bottom: 2em;
+		color: $c-qua;
+		font-size: 1.125em;
+	}
+}
+
+.slide {
+	position: relative;
+	padding: 30px 0px;
+
+	.arrow-slide {
+		position: absolute;
+		background-color: $c-ter;
+		width: 2.5em;
+		height: 2.5em;
+		z-index: 100;
+		cursor: pointer;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&::after {
+			content: '';
+			display: block;
+			width: 10px;
+			height: 7px;
+			background-color: $c-ter;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 1.25em;
+			height: inherit;
+			background-color: $c-pri;
+			z-index: 99;
+		}
+
+		&.left {
+			left: 0;
+
+			&::after {
+				left: 40%;
+			}
+		}
+
+		&.right {
+			right: 0;
+			background-color: $c-pri;
+
+			&::before {
+				background-color: $c-ter;
+			}
+
+			&::after {
+				left: 30%;
+			}
+
+			.arrow {
+				transform: rotateY(180deg);
+				right: -2px;
+			}
+		}
+
+		.arrow {
+			background: url('../../public/imgs/icon-arrow-slide.svg') no-repeat;
+			background-size: 12px 21px;
+			background-position: center;
+			display: block;
+			width: inherit;
+			height: inherit;
+			z-index: 100;
+			position: absolute;
+			top: 0;
+			right: 2px;
+		}
+
+	}
+
+	.description {
+		font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-style: normal;
+		color: $dark;
+		font-size: 1.375em;
+		line-height: 1.2;
+		margin-top: 20px;
+
+		.destaque {
+			color: $destaque;
+		}
+	}
+}
+
+// área produto
+.produto {
+	.lista-itens-produto {
+		ul {
+			margin-bottom: 30px;
+
+			li {
+				text-align: left;
+				font-size: 1.2em;
+				line-height: 1.5;
+
+				&::before {
+					content: url('../../public/imgs/icon-energy.svg');
+					display: inline-block;
+					margin-right: .3em;
+				}
+
+				&::after {
+					content: '';
+					width: 100%;
+					height: 2px;
+					background-color: $c-pri;
+					display: block;
+					margin: 15px 0px;
+				}
+
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.produto-antes-depois {
+		#prods {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 510px;
+			margin: 0 auto;
+
+			.img-hand {
+				display: none;
+				width: 48px;
+				height: 48px;
+
+				img {
+					width: inherit;
+					height: inherit;
+				}
+			}
+		}
+
+		.img-p {}
+
+		.image-produto-one {
+			padding-right: 8px;
+		}
+
+		.image-produto-two {
+			padding-left: 8px;
+		}
+	}
+
+	.arrow-curve {
+		margin-top: 10px;
+	}
+}
+
+// área serviços
+.servicos {
+	.lista-servicos {
+		.servicos-item {
+			h4 {
+				font-size: 1.5em;
+				margin-top: 20px;
+			}
+
+			ul {
+				margin: 1em 0em 90px;
+
+				li {
+					&::before {
+						content: url('../../public/imgs/icon-energy.svg');
+						display: inline-block;
+						margin-right: .3em;
+					}
+				}
+			}
+
+			img {
+				width: 240px;
+				height: 240px;
+				margin: 0 auto;
+				border-radius: 60px 0px;
+				filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+			}
+		}
+	}
+}
+
+// área contato 
+.contato {
+	color: $light;
+	background-color: $c-pri;
+
+	.sub-contato {
+		box-shadow: none;
+		padding-bottom: 0;
+		margin-bottom: 40px;
+	}
+
+	.formulario-contato {
+		fieldset {
+			padding: 0;
+			width: 100%;
+			display: block;
+		}
+
+		legend {
+			font-size: 1.225em;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			line-height: 1.3;
+		}
+
+		label {
+			display: block;
+			text-align: left;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			color: $dark;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		input,
+		textarea {
+			width: 100%;
+			margin-bottom: 20px;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 5px;
+			border: none;
+			padding: .5em 0em;
+			font-family: 'Roboto', Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		input[type='submit'] {
+			background-color: $dark;
+			color: $light;
+			text-transform: uppercase;
+			font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 1.125em;
+			border-radius: 5px;
+			padding: 1em 0em;
+			display: block;
+			position: relative;
+		}
+	}
+
+	.infos-contato {
+    margin-top: 90px;
+		.mapa {
+      margin-bottom: 60px;
+			.faixada {
+        img {
+          border-radius: 16px 16px 0px 0px;
+          display: block;
+        }
+      }
+      
+      .localizacao {
+        img {
+          height: 150px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+		}
+
+		.infos {
+      .description {
+        ul {
+          li {
+            text-align: left;
+            margin-bottom: 20px;
+            a {
+              display: block;
+              color: $dark;
+              div {
+                display: inline-block;
+              }
+              img {
+                display: inline-block;
+              }
+              p {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
 }
