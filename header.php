@@ -35,61 +35,64 @@
               <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></a>
             </li>
           </ul>
-          <div>
+          <div class="pre-email">
             <p>
               Email: <a href="" target="_self">kvaind@yahoo.com.br</a>
             </p>
           </div>
-          <div>
+          <div class="pre-phone">
             <p>
-              Telefone: <a href="tel:+5549999286641" target="_self">(49) 9 9928-6641</a> <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp">
+              Telefone: <a href="tel:+5549999286641" target="_self">(49) 9 9928-6641</a><svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.641 2.885a8.024 8.024 0 00-5.657-2.3 8.024 8.024 0 00-5.656 2.3A7.728 7.728 0 00.984 8.437c0 1.658.516 3.232 1.494 4.57L.995 16.328l3.71-1.257a8.07 8.07 0 004.28 1.216 8.024 8.024 0 005.656-2.3 7.728 7.728 0 002.343-5.551c0-2.097-.832-4.07-2.343-5.552zm-.938 8.249c-.731 1.06-.731 1.06-.748 1.08-.406.488-1.041.74-1.833.74-.295 0-.612-.035-.947-.106-1.126-.238-2.355-.858-3.46-1.747-1.107-.889-1.968-1.95-2.427-2.986-.503-1.137-.473-2.131.086-2.8.016-.02.016-.02.97-.974l.382-.382L7.834 6.71l-.744.892c.363.493.791 1.019 1.331 1.453.541.435 1.15.744 1.715.995l.75-.898L14 10.702l-.298.432z" fill="#25D366" /></svg>
             </p>
           </div>
         </div>
-        <div class="header header-f">
-          <div class="p-header">
-            <h1 class="logo">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
-            </h1>
-            <div class="menu-responsivo" data-menu>
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-menu.svg" alt="" aria-hidden="true">
+        <div class="header-contain">
+          <div class="header header-f">
+            <div class="p-header">
+              <h1 class="logo">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
+              </h1>
+              <div class="menu-responsivo" data-menu>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-menu.svg" alt="" aria-hidden="true">
+              </div>
             </div>
-          </div>
-          <div class="itens-menu">
-            <ul class="list-m">
-              <a href="#home">
-                <li>Home</li>
-              </a>
-              <a href="#sobre">
-                <li>Sobre</li>
-              </a>
-              <a href="#produto">
-                <li>Nosso Produto</li>
-              </a>
-              <a href="#servicos">
-                <li>Serviços</li>
-              </a>
-              <a href="#contato">
-                <li>Contato</li>
-              </a>
-            </ul>
-            <ul class="list-p">
-              <li class="facebook">
-                <a href="https://fb.com/kvatransformadores" target="_blank">
-                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></div>
+            <div class="itens-menu">
+              <ul class="list-m">
+                <a href="#home">
+                  <li>Home</li>
                 </a>
-              </li>
-              <li class="instagram">
-                <a href="https://www.instagram.com/kvaconcordia" target="_blank">
-                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></div>
+                <a href="#sobre">
+                  <li>Sobre</li>
                 </a>
-              </li>
-              <li class="whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank">
-                  <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></div>
+                <a href="#produto">
+                  <li>Nosso Produto</li>
                 </a>
-              </li>
-            </ul>
+                <a href="#servicos">
+                  <li>Serviços</li>
+                </a>
+                <a href="#contato">
+                  <li>Contato</li>
+                </a>
+              </ul>
+              <ul class="list-p">
+                <li class="facebook">
+                  <a href="https://fb.com/kvatransformadores" target="_blank">
+                    <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></div>
+                  </a>
+                </li>
+                <li class="instagram">
+                  <a href="https://www.instagram.com/kvaconcordia" target="_blank">
+                    <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></div>
+                  </a>
+                </li>
+                <li class="whatsapp">
+                  <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank">
+                    <div><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>

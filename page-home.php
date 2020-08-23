@@ -7,34 +7,36 @@
 
   <div class="sobre row">
     <h2 class="subtitulo">A energia move o mundo, não deixe seu negócio parar! <span class="sep"></span></h2>
-    <div class="conteudo">
-      <p>A KVA Transformadores teve seu início em 1993, localizada na cidade de Concórdia-SC,
-        onde encontra-se até hoje.
-        Nossos principais ramos de atuação são a reforma, manutenção e comercialização de transformadores elétricos.</p>
-
-      <p>Trabalhamos com responsabilidade, compromisso, prazo e agilidade e desde nossa
-        fundação já foram mais de 25.000 unidades entregues aos mais diversos segmentos.
-        Possuímos certificação da distribuidora de energia CELESC para a reforma de seus
-        transformadores, e através deste ampliamos nossa rede de atuação.
-      </p>
-
-      <p>Nosso maior compromisso é oferecer um produto que atende as necessidades atuais,
-        utilizando recursos pré-existentes, diminuindo assim a demanda por equipamentos
-        novos ou adicionais. </p>
-
-      <p>Desta forma evitamos que recursos naturais sejam extraídos,
-        e nos posicionamos como uma empresa que colabora com a economia sustentável.</p>
-    </div>
-    <div class="slide">
-      <div class="arrow-slide left">
-        <div class="arrow"></div>
+    <div class="content">
+      <div class="conteudo">
+        <p>A KVA Transformadores teve seu início em 1993, localizada na cidade de Concórdia-SC,
+          onde encontra-se até hoje.
+          Nossos principais ramos de atuação são a reforma, manutenção e comercialização de transformadores elétricos.</p>
+  
+        <p>Trabalhamos com responsabilidade, compromisso, prazo e agilidade e desde nossa
+          fundação já foram mais de 25.000 unidades entregues aos mais diversos segmentos.
+          Possuímos certificação da distribuidora de energia CELESC para a reforma de seus
+          transformadores, e através deste ampliamos nossa rede de atuação.
+        </p>
+  
+        <p>Nosso maior compromisso é oferecer um produto que atende as necessidades atuais,
+          utilizando recursos pré-existentes, diminuindo assim a demanda por equipamentos
+          novos ou adicionais. </p>
+  
+        <p>Desta forma evitamos que recursos naturais sejam extraídos,
+          e nos posicionamos como uma empresa que colabora com a economia sustentável.</p>
       </div>
-      <div class="images">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
-        <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
-      </div>
-      <div class="arrow-slide right">
-        <div class="arrow"></div>
+      <div class="slide">
+        <div class="arrow-slide left">
+          <div class="arrow"></div>
+        </div>
+        <div class="images">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
+          <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
+        </div>
+        <div class="arrow-slide right">
+          <div class="arrow"></div>
+        </div>
       </div>
     </div>
   </div>

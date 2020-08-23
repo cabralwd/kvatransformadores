@@ -77,6 +77,12 @@
 .sobre {
 	margin-top: 3.75rem;
 
+	@include tamanho-tela('desktop') {
+		.content {
+			display: flex;
+		}
+	}
+
 	p {
 		margin-bottom: 2em;
 		color: $c-qua;
@@ -84,9 +90,20 @@
 	}
 }
 
+.conteudo {
+	@include tamanho-tela('desktop') {
+		width: 510px;
+	}
+}
+
 .slide {
 	position: relative;
 	padding: 30px 0px;
+
+	@include tamanho-tela('tablet') {
+		margin: 0 auto;
+		width: 450px;
+	}
 
 	.arrow-slide {
 		position: absolute;
@@ -177,6 +194,12 @@
 // área produto
 .produto {
 	.lista-itens-produto {
+		@include tamanho-tela('tablet') {
+			margin: 0 auto;
+			display: block;
+			width: 490px;
+		}
+
 		ul {
 			margin-bottom: 30px;
 
@@ -229,7 +252,11 @@
 			}
 		}
 
-		.img-p {}
+		.img-p {
+			img {
+				@extend %imagesStyleDefault;
+			}
+		}
 
 		.image-produto-one {
 			padding-right: 8px;
@@ -248,7 +275,18 @@
 // área serviços
 .servicos {
 	.lista-servicos {
+		@include tamanho-tela('tablet') {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		.servicos-item {
+			@include tamanho-tela('tablet') {
+				padding: 0 15px;
+				width: 240px;
+			}
+
 			h4 {
 				font-size: 1.5em;
 				margin-top: 20px;
@@ -269,9 +307,10 @@
 			img {
 				width: 240px;
 				height: 240px;
+				display: block;
 				margin: 0 auto;
-				border-radius: 60px 0px;
-				filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
+				@extend %imagesStyleDefault;
+
 			}
 		}
 	}
@@ -294,6 +333,11 @@
 	}
 
 	.formulario-contato {
+		@include tamanho-tela('tablet') {
+			width: 600px;
+			margin: 0 auto;
+		}
+
 		fieldset {
 			padding: 0;
 			width: 100%;
@@ -351,6 +395,11 @@
 	.infos-contato {
 		margin-top: 90px;
 
+		@include tamanho-tela('tablet') {
+			width: 600px;
+			margin: 90px auto 0px;
+		}
+
 		.mapa {
 			margin-bottom: 60px;
 
@@ -363,6 +412,7 @@
 
 			.localizacao {
 				img {
+					width: 100%;
 					height: 150px;
 					object-fit: cover;
 					object-position: center;
@@ -371,6 +421,11 @@
 		}
 
 		.infos {
+			@include tamanho-tela('tablet') {
+				width: 520px;
+				margin: 0 auto;
+			}
+
 			.description {
 
 				&.idados {

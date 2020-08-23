@@ -1,5 +1,55 @@
 .pre-header {
 	display: none;
+
+	@include tamanho-tela('desktop-up') {
+		width: 1140px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		color: $light;
+		font-size: 1.125em;
+
+		.pre-email,
+		.pre-phone {
+			display: flex;
+			align-items: center;
+		}
+
+		.pre-phone {}
+
+		a {
+			color: $light;
+		}
+
+		ul {
+			padding: .9em 0px;
+			display: flex;
+			justify-content: space-between;
+			width: 170px;
+
+			li {
+				width: 36px;
+				height: 36px;
+			}
+
+			a {
+				background-color: $c-ter;
+				width: inherit;
+				height: inherit;
+				display: block;
+				position: relative;
+
+				img {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
 }
 
 header {
@@ -8,6 +58,10 @@ header {
 	width: 100%;
 	top: 0;
 	z-index: 999;
+
+	@include tamanho-tela(desktop-up) {
+		position: relative;
+	}
 }
 
 .menu-responsivo {
@@ -18,8 +72,32 @@ header {
 		height: 54px;
 	}
 
-	@include tamanho-tela(desktop) {
+	@include tamanho-tela(desktop-up) {
 		display: none;
+	}
+}
+
+.header-contain {
+	position: relative;
+	height: inherit;
+
+	@include tamanho-tela('desktop-up') {
+		display: flex;
+		justify-content: flex-end;
+
+		// efeito poste
+		&::before {
+			content: '';
+			position: absolute;
+			background: url('../../public/imgs/efeito-poste.png') repeat-x;
+			background-size: contain;
+			background-position: right;
+			width: 100%;
+			height: 40px;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 }
 
@@ -30,6 +108,25 @@ header {
 	position: fixed;
 	width: 100%;
 	height: inherit;
+
+	@include tamanho-tela(desktop-up) {
+		position: relative;
+		width: 1140px;
+		margin: 0 auto;
+
+		// efeito base poste
+		&::after {
+			content: '';
+			height: 80px;
+			width: 100%;
+			position: absolute;
+			top: -10px;
+			right: -95%;
+			background-color: $c-pri;
+			border: 5px solid $c-ter;
+			transform: skew(40deg, 0deg);
+		}
+	}
 
 	.p-header {
 		width: 100%;

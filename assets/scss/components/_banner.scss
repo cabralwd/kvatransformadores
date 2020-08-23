@@ -5,6 +5,10 @@
 	background-size: cover;
 	background-position: center;
 
+	@include tamanho-tela(desktop-up) {
+		margin-top: 0px;
+	}
+
 	.content-banner {
 		height: inherit;
 		display: flex;
@@ -19,6 +23,10 @@
 		font-style: normal;
 		letter-spacing: .09em;
 		font-size: .8em;
+
+		@include tamanho-tela('tablet') {
+			font-size: 1.5em;
+		}
 
 		p {
 			font-size: 1.6em;

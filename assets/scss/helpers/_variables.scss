@@ -6,6 +6,7 @@ $c-qua: #515151;
 $dark: #000000;
 $light: #FFFFFF;
 $destaque: #64CD48;
+$wpp: #25D366;
 
 // Consulta de media queries
 @mixin tamanho-tela($size) {
@@ -38,4 +39,10 @@ $destaque: #64CD48;
 			@content;
 		}
 	}
+}
+
+// Placeholders
+%imagesStyleDefault {
+	border-radius: 60px 0px;
+	filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.5));
 }
