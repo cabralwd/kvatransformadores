@@ -159,57 +159,45 @@
         </div>
 
         <div class="infos">
-          <div class="description">
+          <div class="description idados">
             <ul>
               <li>
                 <a href="mailto:kvaind@yahoo.com.br?subject=Or%C3%A7amento%20para%20Recondicionamento%20de%20Geradores%20(contato%20via%20site)&body=Ol%C3%A1%20equipe%20KVA%20Transformadores%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem%20no%20site%2C%20fico%20no%20aguardo%20do%20retorno." target="_self">
-                  <div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-email.svg" alt="email: kvaind@yahoo.com.br">
-                  </div>
-                  <div>
-                    <p>kvaind@yahoo.com.br</p>
-                  </div>
+                  <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-email.svg" alt="email: kvaind@yahoo.com.br">
+                  <p class="dado">kvaind@yahoo.com.br</p>
                 </a>
               </li>
               <li>
                 <a href="tel:+5549999286641" target="_self">
-                  <div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-phone.svg" alt="Telefone: (49) 9 9928-6641">
-                  </div>
-                  <div>
-                    <p>(49) 9 9928-6641</p>
-                  </div>
+                  <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-phone.svg" alt="Telefone: (49) 9 9928-6641">
+                  <p class="dado">(49) 9 9928-6641</p>
                 </a>
               </li>
               <li>
                 <a href="https://www.google.com/maps/place/KVA+Ind%C3%BAstria+de+Transformadores+Ltda/@-27.2217949,-51.9518411,15z/data=!4m8!1m2!2m1!1sRua+Isidoro+Simioni,+620+%C3%81rea+Industrial,+Concordia%2FSC+CEP+89713-194!3m4!1s0x0:0x9752e3db9d0ce709!8m2!3d-27.2208389!4d-51.9452376" target="_blank">
-                  <div>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-location.svg" alt="Endereço: Rua Isidoro Simioni, 620 Área Industrial, Concordia/SC CEP 9713-194">
-                  </div>
-                  <div>
-                    <p>Rua Isidoro Simioni, 620
-                      Área Industrial, Concordia/SC
-                      CEP 89713-194</p>
-                  </div>
+                  <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-location.svg" alt="Endereço: Rua Isidoro Simioni, 620 Área Industrial, Concordia/SC CEP 9713-194">
+                  <p class="dado">Rua Isidoro Simioni, 620
+                    Área Industrial, Concordia/SC
+                    CEP 89713-194</p>
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div class="description">
             <ul>
               <li>
-                <a href="https://fb.com/kvatransformadores" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></a>
+                <a class="icon-r" href="https://fb.com/kvatransformadores" target="_blank"><img class="facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kvaconcordia" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></a>
+                <a class="icon-r" href="https://www.instagram.com/kvaconcordia" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-instagram.svg" alt="Instagram"></a>
               </li>
               <li>
-                <a href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></a>
+                <a class="icon-r" href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></a>
               </li>
             </ul>
-            <a href="https://fb.com/kvatransformadores" target="_blank">fb.com/kvatransformadores</a>
-            <a href="https://www.instagram.com/kvaconcordia" target="_blank">instagram.com/kvaconcordia</a>
-            <p>KVA Industria de Transformadores Ltda. © Todos os direitos reservados - <?php echo date("Y"); ?></p>
+            <a class="link-redes" href="https://fb.com/kvatransformadores" target="_blank">fb.com/kvatransformadores</a>
+            <a class="link-redes" href="https://www.instagram.com/kvaconcordia" target="_blank">instagram.com/kvaconcordia</a>
+            <p class="text-direitos">KVA Industria de Transformadores Ltda. © Todos os direitos reservados - <?php echo date("Y"); ?></p>
           </div>
         </div>
       </div>

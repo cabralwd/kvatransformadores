@@ -281,6 +281,11 @@
 .contato {
 	color: $light;
 	background-color: $c-pri;
+	padding-bottom: 2em;
+
+	.row {
+		margin-bottom: 0px;
+	}
 
 	.sub-contato {
 		box-shadow: none;
@@ -344,47 +349,116 @@
 	}
 
 	.infos-contato {
-    margin-top: 90px;
+		margin-top: 90px;
+
 		.mapa {
-      margin-bottom: 60px;
+			margin-bottom: 60px;
+
 			.faixada {
-        img {
-          border-radius: 16px 16px 0px 0px;
-          display: block;
-        }
-      }
-      
-      .localizacao {
-        img {
-          height: 150px;
-          object-fit: cover;
-          object-position: center;
-        }
-      }
+				img {
+					border-radius: 16px 16px 0px 0px;
+					display: block;
+				}
+			}
+
+			.localizacao {
+				img {
+					height: 150px;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
 		}
 
 		.infos {
-      .description {
-        ul {
-          li {
-            text-align: left;
-            margin-bottom: 20px;
-            a {
-              display: block;
-              color: $dark;
-              div {
-                display: inline-block;
-              }
-              img {
-                display: inline-block;
-              }
-              p {
-                display: inline-block;
-              }
-            }
-          }
-        }
-      }
-    }
+			.description {
+
+				&.idados {
+					margin-bottom: 1em;
+				}
+
+				ul {
+					display: flex;
+					justify-content: space-around;
+
+					li {
+						text-align: left;
+						margin-bottom: 20px;
+
+						.icon-r {
+							background: $dark;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: row;
+							height: inherit;
+							border-radius: 50%;
+							width: 42px;
+							height: 42px;
+							padding: .5em;
+
+							img {
+								width: 32px;
+
+								&.facebook {
+									width: 20px;
+								}
+							}
+						}
+
+						a {
+							color: $dark;
+							display: block;
+							width: 100%;
+
+							.icon {
+								background: $dark;
+								width: 42px;
+								height: 42px;
+								padding: .5em;
+								border-radius: 50%;
+								display: inline-block;
+							}
+
+							.dado {
+								display: none;
+							}
+						}
+					}
+				}
+
+				.link-redes {
+					color: $dark;
+					display: none;
+					font-size: 1.125em;
+					margin-bottom: 8px;
+				}
+
+				.text-direitos {
+					font-size: 1.125em;
+					padding: 2rem 0;
+				}
+			}
+		}
+	}
+}
+
+// área dev	
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+.footer-dev {
+	display: block;
+	width: 100%;
+	padding: .9em 0px;
+	background: linear-gradient(270deg, #EEAA55 0%, #FF4E81 100%);
+	color: $dark;
+	font-family: 'Nunito',
+		sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.33em;
+
+	a {
+		color: $light;
 	}
 }
