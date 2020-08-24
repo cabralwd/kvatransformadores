@@ -23,7 +23,7 @@
           utilizando recursos pré-existentes, diminuindo assim a demanda por equipamentos
           novos ou adicionais. </p>
 
-        <p>Desta forma evitamos que recursos naturais sejam extraídos,
+        <p>Com o nosso trabalho evitamos que recursos naturais sejam extraídos,
           e nos posicionamos como uma empresa que colabora com a economia sustentável.</p>
       </div>
       <div class="slide">
@@ -108,6 +108,7 @@
             <li>Correções de vazamento</li>
             <li>Instalação de acessórios</li>
             <li>Reaperto de conexões</li>
+            <li>Análise e tratamento de óleo isolante</li>
             <li>Limpezas</li>
           </ul>
         </div>
@@ -117,8 +118,7 @@
           <ul>
             <li>Medição de Grandezas</li>
             <li>Inspeção de laudos</li>
-            <li>Emissão de laudos</li>
-            <li>ART</li>
+            <li>Emissão de laudos e ART</li>
             <li>Startup de Subestações</li>
           </ul>
         </div>
@@ -188,7 +188,8 @@
               </li>
             </ul>
           </div>
-          <div class="description">
+          <div class="description redes-sociais">
+            <h5 class="tit">Solicite também um orçamento via WhatsApp, teremos o prazer em te atender:</h5>
             <ul>
               <li>
                 <a class="icon-r" href="https://fb.com/kvatransformadores" target="_blank"><img class="facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-facebook.svg" alt="Facebook"></a>
@@ -202,9 +203,10 @@
             </ul>
             <a class="link-redes" href="https://fb.com/kvatransformadores" target="_blank">fb.com/kvatransformadores</a>
             <a class="link-redes" href="https://www.instagram.com/kvaconcordia" target="_blank">instagram.com/kvaconcordia</a>
-            <p class="text-direitos">KVA Industria de Transformadores Ltda. © Todos os direitos reservados - <?php echo date("Y"); ?></p>
           </div>
         </div>
+
+        <p class="text-direitos">KVA Industria de Transformadores Ltda. © Todos os direitos reservados - <?php echo date("Y"); ?></p>
       </div>
     </div>
 

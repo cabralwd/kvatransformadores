@@ -546,19 +546,29 @@
 		}
 
 		.infos {
+			display: flex;
+			flex-wrap: wrap;
+
 			@include tamanho-tela('tablet') {
 				width: 520px;
 				margin: 0 auto;
 			}
 
 			@include tamanho-tela('desktop-up') {
-				display: flex;
+				flex-wrap: nowrap;
 			}
 
 			.description {
 
 				&.idados {
 					margin-bottom: 1em;
+					width: 100%;
+					order: 2;
+					margin-top: 1.5rem;
+
+					@include tamanho-tela('desktop-up') {
+						margin-top: 0px;
+					}
 
 					ul {
 						@include tamanho-tela('desktop-up') {
@@ -580,6 +590,55 @@
 										height: 20px;
 										margin-right: 10px;
 									}
+								}
+							}
+						}
+					}
+				}
+
+				&.redes-sociais {
+					width: 100%;
+					order: 1;
+
+					.tit {
+						font-size: 1.1em;
+						color: $destaque-two;
+						margin-bottom: 20px;
+						display: none;
+
+						@include tamanho-tela('desktop-up') {
+							text-align: left;
+							font-size: 1.2em;
+						}
+					}
+
+					ul {
+						li {
+							&:nth-child(1) {
+								order: 2;
+
+								a {
+									&:hover {
+										background-color: $face;
+									}
+								}
+							}
+
+							&:nth-child(2) {
+								order: 3;
+
+								a {
+									&:hover {
+										background-color: $inst;
+									}
+								}
+							}
+
+							&:nth-child(3) {
+								order: 1;
+
+								a {
+									background-color: $wpp;
 								}
 							}
 						}
@@ -677,18 +736,22 @@
 						}
 					}
 				}
-
-				.text-direitos {
-					font-size: 1.125em;
-					padding: 2rem 0;
-
-					@include tamanho-tela('desktop-up') {
-						text-align: left;
-						font-size: 1.2em;
-						color: $dark;
-					}
-				}
 			}
+		}
+	}
+
+	.text-direitos {
+		font-size: 1.125em;
+		padding: 2rem 0 0 0;
+		width: 100%;
+
+		@include tamanho-tela('desktop-up') {
+			text-align: left;
+			font-size: 1.2em;
+			padding: 1rem 0;
+			color: $dark;
+			width: 512px;
+			margin: 0 auto;
 		}
 	}
 }
@@ -715,11 +778,11 @@
 		transition: .4s ease-in-out;
 		padding: .9em 0px .9em 0px;
 		font-size: 1em;
-		
+
 		@include tamanho-tela('desktop-up') {
 			padding-right: 20px;
 			text-align: right;
-			font-size: .8em;			
+			font-size: .8em;
 			display: block;
 		}
 
