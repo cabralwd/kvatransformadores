@@ -152,11 +152,23 @@ header {
 	.itens-menu {
 		display: none;
 
+		@include tamanho-tela('desktop-up') {
+			display: block;
+			top: 0;
+			position: absolute;
+			width: 100%;
+			height: inherit;
+		}
+
 		.list-m {
 			width: 100%;
 			position: relative;
 			background-color: $c-sec;
 			padding: 1em 0;
+
+			@include tamanho-tela('desktop-up') {
+				background: transparent;
+			}
 
 			a {
 				color: $dark;
@@ -165,6 +177,12 @@ header {
 				text-transform: uppercase;
 				font-size: 1.125em;
 				text-align: right;
+
+				@include tamanho-tela('desktop-up') {
+					display: inline-block;
+					text-align: inherit;
+					color: $light;
+				}
 			}
 		}
 
@@ -173,6 +191,10 @@ header {
 			display: flex;
 			justify-content: center;
 			background-color: $c-ter;
+
+			@include tamanho-tela('desktop-up') {
+				display: none;
+			}
 
 			a,
 			li {
