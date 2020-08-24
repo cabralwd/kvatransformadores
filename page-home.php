@@ -12,17 +12,17 @@
         <p>A KVA Transformadores teve seu início em 1993, localizada na cidade de Concórdia-SC,
           onde encontra-se até hoje.
           Nossos principais ramos de atuação são a reforma, manutenção e comercialização de transformadores elétricos.</p>
-  
+
         <p>Trabalhamos com responsabilidade, compromisso, prazo e agilidade e desde nossa
           fundação já foram mais de 25.000 unidades entregues aos mais diversos segmentos.
           Possuímos certificação da distribuidora de energia CELESC para a reforma de seus
           transformadores, e através deste ampliamos nossa rede de atuação.
         </p>
-  
+
         <p>Nosso maior compromisso é oferecer um produto que atende as necessidades atuais,
           utilizando recursos pré-existentes, diminuindo assim a demanda por equipamentos
           novos ou adicionais. </p>
-  
+
         <p>Desta forma evitamos que recursos naturais sejam extraídos,
           e nos posicionamos como uma empresa que colabora com a economia sustentável.</p>
       </div>
@@ -45,32 +45,33 @@
     <h2 class="subtitulo-two">Nosso produto</h2>
     <div class="row">
       <h3 class="subtitulo-three">Transformadores recondicionados</h3>
-
-      <div class="lista-itens-produto">
-        <ul>
-          <li>Fases: Trifásicos ou monofásicos</li>
-          <li>Potências: de 05 a 2500 kVA</li>
-          <li>Tensões de entrada: 6,6kV / 13,8kV / 23,1kV / 34,5kV</li>
-          <li>Tensões de saída: 220V / 380V / 440V (outras sob consulta)</li>
-          <li>Frequência: 50 ou 60Hz</li>
-          <li>Isolação: imerso em óleo ou a seco</li>
-          <li>Condutores em cobre ou alumínio</li>
-        </ul>
-      </div>
-      <div class="produto-antes-depois">
-        <div id="prods">
-          <div class="img-p image-produto-one">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-antes.jpg" alt="Foto de Transformador antes de ser reformado">
-          </div>
-          <div class="img-hand">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-hand-energy.svg" alt="" aria-hidden="true">
-          </div>
-          <div class="img-p image-produto-two">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-depois.jpg" alt="Foto de Transformador depois da reforma">
-          </div>
+      <div class="produto-content">
+        <div class="lista-itens-produto">
+          <ul>
+            <li>Fases: Trifásicos ou monofásicos</li>
+            <li>Potências: de 05 a 2500 kVA</li>
+            <li>Tensões de entrada: 6,6kV / 13,8kV / 23,1kV / 34,5kV</li>
+            <li>Tensões de saída: 220V / 380V / 440V (outras sob consulta)</li>
+            <li>Frequência: 50 ou 60Hz</li>
+            <li>Isolação: imerso em óleo ou a seco</li>
+            <li>Condutores em cobre ou alumínio</li>
+          </ul>
         </div>
-        <div class="arrow-curve" aria-hidden="true">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow-curve.svg" alt="">
+        <div class="produto-antes-depois">
+          <div id="prods">
+            <div class="img-p image-produto-one">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-antes.jpg" alt="Foto de Transformador antes de ser reformado">
+            </div>
+            <div class="img-hand">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-hand-energy.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="img-p image-produto-two">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-depois.jpg" alt="Foto de Transformador depois da reforma">
+            </div>
+          </div>
+          <div class="arrow-curve" aria-hidden="true">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow-curve.svg" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -155,9 +156,11 @@
           <div class="faixada">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-kva-faixada.jpg" alt="Foto da faixada da KVA Industria de Transformadores Ltda.">
           </div>
-          <div class="localizacao">
-            <a href="https://www.google.com/maps/place/KVA+Ind%C3%BAstria+de+Transformadores+Ltda/@-27.2217949,-51.9518411,15z/data=!4m8!1m2!2m1!1sRua+Isidoro+Simioni,+620+%C3%81rea+Industrial,+Concordia%2FSC+CEP+89713-194!3m4!1s0x0:0x9752e3db9d0ce709!8m2!3d-27.2208389!4d-51.9452376" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-mapa.jpg" alt="Clique aqui para abrir o mapa"></a>
-          </div>
+          <a href="https://www.google.com/maps/place/KVA+Ind%C3%BAstria+de+Transformadores+Ltda/@-27.2217949,-51.9518411,15z/data=!4m8!1m2!2m1!1sRua+Isidoro+Simioni,+620+%C3%81rea+Industrial,+Concordia%2FSC+CEP+89713-194!3m4!1s0x0:0x9752e3db9d0ce709!8m2!3d-27.2208389!4d-51.9452376" target="_blank" rel="noopener noreferrer">
+            <div class="localizacao">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-mapa.jpg" alt="Clique aqui para abrir o mapa">
+            </div>
+          </a>
         </div>
 
         <div class="infos">
@@ -178,7 +181,7 @@
               <li>
                 <a href="https://www.google.com/maps/place/KVA+Ind%C3%BAstria+de+Transformadores+Ltda/@-27.2217949,-51.9518411,15z/data=!4m8!1m2!2m1!1sRua+Isidoro+Simioni,+620+%C3%81rea+Industrial,+Concordia%2FSC+CEP+89713-194!3m4!1s0x0:0x9752e3db9d0ce709!8m2!3d-27.2208389!4d-51.9452376" target="_blank">
                   <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-location.svg" alt="Endereço: Rua Isidoro Simioni, 620 Área Industrial, Concordia/SC CEP 9713-194">
-                  <p class="dado">Rua Isidoro Simioni, 620
+                  <p class="dado df">Rua Isidoro Simioni, 620
                     Área Industrial, Concordia/SC
                     CEP 89713-194</p>
                 </a>
