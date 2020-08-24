@@ -39,6 +39,10 @@
 				display: block;
 				position: relative;
 
+				&:nth-child(1) {
+
+				}
+
 				img {
 					display: block;
 					position: absolute;
@@ -97,6 +101,9 @@ header {
 			left: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			animation-name: runenergy;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
 		}
 	}
 }
