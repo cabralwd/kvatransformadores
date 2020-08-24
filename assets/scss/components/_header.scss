@@ -19,6 +19,10 @@
 
 		a {
 			color: $light;
+
+			&:hover {
+				color: $c-pri;
+			}
 		}
 
 		ul {
@@ -30,6 +34,36 @@
 			li {
 				width: 36px;
 				height: 36px;
+
+				&:nth-child(1) {
+					order: 2;
+
+					a {
+						&:hover {
+							background-color: $face;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					order: 3;
+
+					a {
+						&:hover {
+							background-color: $inst;
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					order: 1;
+
+					a {
+						&:hover {
+							background-color: $wpp;
+						}
+					}
+				}
 			}
 
 			a {
@@ -38,10 +72,6 @@
 				height: inherit;
 				display: block;
 				position: relative;
-
-				&:nth-child(1) {
-
-				}
 
 				img {
 					display: block;
@@ -61,7 +91,7 @@ header {
 	height: 70px;
 	width: 100%;
 	top: 0;
-	z-index: 999;
+	z-index: 9999;
 
 	@include tamanho-tela(desktop-up) {
 		position: relative;
@@ -157,7 +187,19 @@ header {
 	}
 
 	.itens-menu {
-		display: none;
+		position: relative;
+		transform: translateX(150%);
+
+		&.ativo {
+			animation-name: openMenu;
+			animation-duration: .5s;
+			transform: translateX(0%);
+		}
+		
+		&.close {
+			animation-name: closeMenu;
+			animation-duration: .9s;
+		}
 
 		@include tamanho-tela('desktop-up') {
 			display: block;
@@ -165,6 +207,8 @@ header {
 			position: absolute;
 			width: 100%;
 			height: inherit;
+			transform: translateX(0%);
+			animation: none;
 		}
 
 		.list-m {

@@ -4,11 +4,12 @@
 function openMenu(e) {
   e.preventDefault();
   const list = document.querySelector('.itens-menu');
-  console.log('testess');
-  if (list.style.display === 'none') {
-    list.style.display = 'block';
-  } else {
-    list.style.display = 'none';
+  list.classList.toggle('ativo');
+
+  if (!list.classList.contains('ativo')) {
+    list.classList.toggle('close');
+  } else if (list.classList.contains('close')) {
+    list.classList.remove('close');
   }
 }
 

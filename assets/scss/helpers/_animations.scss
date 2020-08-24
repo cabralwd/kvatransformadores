@@ -11,3 +11,23 @@
 		transform: translate(0%, -50%);
 	}
 }
+
+@keyframes openMenu {
+  0% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(150%);
+  }
+}
