@@ -100,10 +100,15 @@ header {
 
 .menu-responsivo {
 	padding: .3em .5em;
+	width: 54px;
+	height: 54px;
+	background-image: url('../../public/imgs/icon-menu.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
 
-	img {
-		width: 54px;
-		height: 54px;
+	&.close {
+		background-image: url('../../public/imgs/icon-menu-close.svg');
 	}
 
 	@include tamanho-tela(desktop-up) {
@@ -195,7 +200,7 @@ header {
 			animation-duration: .5s;
 			transform: translateX(0%);
 		}
-		
+
 		&.close {
 			animation-name: closeMenu;
 			animation-duration: .9s;
