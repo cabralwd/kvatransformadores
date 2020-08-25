@@ -209,8 +209,9 @@ header {
 		@include tamanho-tela('desktop-up') {
 			display: block;
 			top: 0;
+			right: 10%;
 			position: absolute;
-			width: 100%;
+			width: 70%;
 			height: inherit;
 			transform: translateX(0%);
 			animation: none;
@@ -224,6 +225,8 @@ header {
 
 			@include tamanho-tela('desktop-up') {
 				background: transparent;
+				display: flex;
+				justify-content: space-around;
 			}
 
 			a {
@@ -238,6 +241,23 @@ header {
 					display: inline-block;
 					text-align: inherit;
 					color: $light;
+
+					&:hover {
+						li {
+							position: relative;
+
+							&::after {
+								content: '';
+								display: block;
+								width: 60%;
+								height: 5px;
+								background-color: $c-pri;
+								position: absolute;
+								bottom: -7px;
+								right: 0;
+							}
+						}
+					}
 				}
 			}
 		}

@@ -1,8 +1,7 @@
 "use strict";
 
 // Funcionalidade do Menu Responsivo
-function openMenu(e) {
-  e.preventDefault();
+function openMenu() {
   const list = document.querySelector('.itens-menu'), menu = document.querySelector('.menu-responsivo');
   list.classList.toggle('ativo');
   menu.classList.toggle('close');
@@ -16,8 +15,12 @@ function openMenu(e) {
   window.navigator.vibrate(200);
 }
 
-const iconM = document.querySelector('[data-menu]');
+const iconM = document.querySelector('[data-menu]'),
+  itensMenu = document.querySelectorAll('.list-m a');
 iconM.addEventListener('click', openMenu);
+itensMenu.forEach(item => {
+  item.addEventListener('click', openMenu);
+});
 
 // banner rotativo de imagens
 (() => {

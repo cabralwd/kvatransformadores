@@ -16,12 +16,12 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="home">
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   <div class="container">
-    <div class="banner" data-banner="3000">
+    <div class="banner" data-banner="6000">
       <header>
         <div class="pre-header">
           <ul>
