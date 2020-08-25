@@ -21,7 +21,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   <div class="container">
-    <div class="banner">
+    <div class="banner" data-banner="3000">
       <header>
         <div class="pre-header">
           <ul>
@@ -54,7 +54,6 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/logo-kva.svg" alt="Logo KVA Transformadores">
               </h1>
               <div class="menu-responsivo" data-menu>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-menu.svg" alt="" aria-hidden="true">
               </div>
             </div>
             <div class="itens-menu">
@@ -98,8 +97,8 @@
       </header>
       <div class="content-banner row">
         <div class="titulo-banner">
-          <h1>KVA transformadores</h1>
-          <p><span>Transformando sua</span> <br><span>Energia</span>.</p>
+          <h1 data-animation="1000" class="no-anima-fade">KVA transformadores</h1>
+          <p data-animation="1500" class="no-anima-fade"><span>Transformando sua</span> <br><span>Energia</span>.</p>
         </div>
         <div class="next-section">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-arrow.svg" alt="" aria-hidden="true">
