@@ -5,7 +5,7 @@
 
 <div class="container">
 
-  <div class="sobre row">
+  <div id="sobre" class="sobre row">
     <h2 class="subtitulo">A energia move o mundo, não deixe seu negócio parar! <span class="sep"></span></h2>
     <div class="content">
       <div class="conteudo">
@@ -30,9 +30,17 @@
         <div class="arrow-slide left">
           <div class="arrow"></div>
         </div>
-        <div class="images">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
-          <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
+        <div class="imagem-slide">
+          <div class="content-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
+            <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
+          </div>
+        </div>
+        <div class="imagem-slide">
+          <div class="content-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
+            <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
+          </div>
         </div>
         <div class="arrow-slide right">
           <div class="arrow"></div>
@@ -41,7 +49,7 @@
     </div>
   </div>
 
-  <div class="produto">
+  <div id="produto" class="produto">
     <h2 class="subtitulo-two">Nosso produto</h2>
     <div class="row">
       <h3 class="subtitulo-three">Transformadores recondicionados</h3>
@@ -77,7 +85,7 @@
     </div>
   </div>
 
-  <div class="servicos">
+  <div id="servicos" class="servicos">
     <h2 class="subtitulo-two">Serviços</h2>
     <div class="row">
       <h3 class="subtitulo-three">Oferecemos a melhor qualidade em:</h3>
@@ -126,7 +134,7 @@
     </div>
   </div>
 
-  <div class="contato">
+  <div id="contato" class="contato">
     <h2 class="subtitulo-two sub-contato">Contato</h2>
 
     <div class="row">
