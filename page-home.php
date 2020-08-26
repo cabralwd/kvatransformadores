@@ -121,9 +121,9 @@
           <ul>
             <li>Correções de vazamento</li>
             <li>Instalação de acessórios</li>
-            <li>Reaperto de conexões</li>
+            <li>Inspeções Técnicas</li>
             <li>Análise e tratamento de óleo isolante</li>
-            <li>Limpezas</li>
+            <li>Limpezas de subestação</li>
           </ul>
         </div>
         <div class="servicos-item" data-servico="4">
@@ -196,8 +196,7 @@
                 <a href="https://www.google.com/maps/place/KVA+Ind%C3%BAstria+de+Transformadores+Ltda/@-27.2217949,-51.9518411,15z/data=!4m8!1m2!2m1!1sRua+Isidoro+Simioni,+620+%C3%81rea+Industrial,+Concordia%2FSC+CEP+89713-194!3m4!1s0x0:0x9752e3db9d0ce709!8m2!3d-27.2208389!4d-51.9452376" target="_blank">
                   <img class="icon" src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-location.svg" alt="Endereço: Rua Isidoro Simioni, 620 Área Industrial, Concordia/SC CEP 9713-194">
                   <p class="dado df">Rua Isidoro Simioni, 620
-                    Área Industrial, Concordia/SC
-                    CEP 89713-194</p>
+                    Área Industrial, Concordia/SC<br> CEP: 89713-194</p>
                 </a>
               </li>
             </ul>
@@ -215,8 +214,6 @@
                 <a class="icon-r" href="https://api.whatsapp.com/send?phone=5549999286641&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento%20com%20vocês%20nos%20transformadores%20da%20minha%20empresa!" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/icon-whatsapp.svg" alt="WhatsApp"></a>
               </li>
             </ul>
-            <a class="link-redes" href="https://fb.com/kvatransformadores" target="_blank">fb.com/kvatransformadores</a>
-            <a class="link-redes" href="https://www.instagram.com/kvaconcordia" target="_blank">instagram.com/kvaconcordia</a>
           </div>
         </div>
 

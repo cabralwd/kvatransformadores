@@ -42,7 +42,7 @@ itensMenu.forEach(item => {
     }
 
   }, timer);
-})();
+});
 
 (() => {
   let textos = document.querySelectorAll('[data-animation]');
