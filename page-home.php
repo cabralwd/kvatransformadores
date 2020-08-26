@@ -144,22 +144,27 @@
 
     <div class="row">
       <div class="formulario-contato">
-        <form action="<?php echo get_stylesheet_directory_uri(); ?>/enviar.php" method="post" name="form-contato">
+        <form action="<?php echo get_stylesheet_directory_uri(); ?>/enviar.php" method="post" name="form">
           <fieldset>
             <legend>Solicite um orçamento conosco:</legend>
-            <label for="i-nome">Nome:</label>
-            <input type="text" name="name" id="i-nome">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
 
-            <label for="i-email">Email:</label>
-            <input type="email" name="email" id="i-email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
 
-            <label for="i-telefone">Telefone:</label>
-            <input type="tel" name="phone" id="i-telefone">
+            <label for="phone">Telefone:</label>
+            <input type="tel" name="phone" id="phone">
 
-            <label for="i-mensagem">Mensagem:</label>
-            <textarea max="100" name="mensagem" id="i-mensagem"></textarea>
+            <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
-            <input type="submit" name="enviar" value="Enviar">
+            <label for="mensagem">Mensagem:</label>
+            <textarea max="100" name="mensagem" id="mensagem"></textarea>
+
+            <input id="enviar" type="submit" name="enviar" value="Enviar">
           </fieldset>
         </form>
       </div>

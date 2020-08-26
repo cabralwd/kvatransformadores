@@ -1,16 +1,14 @@
 <?php
 
 // Trocar os valores abaixo
-
 $emailenvio = 'contato@kvatransformadores.com.br';
 $assunto = 'Formulário Site KVA';
-$url = 'http://kvatransformadores.com.br';
+$url = 'https://www.kvatransformadores.com.br';
 
 // Mude até aqui apenas
-
-$nome = $_POST['nome'];
+$nome = $_POST['name'];
 $email = $_POST['email'];
-$telefone = $_POST['telefone'];
+$telefone = $_POST['phone'];
 $mensagem = $_POST['mensagem'];
 
 $body = "$mensagem\n\n---------------\n\n$nome\n$telefone\n$email";
