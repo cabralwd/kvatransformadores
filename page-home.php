@@ -145,22 +145,22 @@
 
     <div class="row">
       <div class="formulario-contato">
-        <form action="">
+        <form action="<?php echo get_stylesheet_directory_uri(); ?>/enviar.php" method="post" name="form-contato">
           <fieldset>
             <legend>Solicite um orçamento conosco:</legend>
             <label for="i-nome">Nome:</label>
-            <input type="text" name="" id="i-nome">
+            <input type="text" name="name" id="i-nome">
 
             <label for="i-email">Email:</label>
-            <input type="email" name="" id="i-email">
+            <input type="email" name="email" id="i-email">
 
             <label for="i-telefone">Telefone:</label>
-            <input type="tel" name="" id="i-telefone">
+            <input type="tel" name="phone" id="i-telefone">
 
             <label for="i-mensagem">Mensagem:</label>
-            <textarea max="100" name="" id="i-mensagem"></textarea>
+            <textarea max="100" name="mensagem" id="i-mensagem"></textarea>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" name="enviar" value="Enviar">
           </fieldset>
         </form>
       </div>
