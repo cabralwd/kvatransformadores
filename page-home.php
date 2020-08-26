@@ -121,7 +121,6 @@
           <ul>
             <li>Correções de vazamento</li>
             <li>Instalação de acessórios</li>
-            <li>Inspeções Técnicas</li>
             <li>Análise e tratamento de óleo isolante</li>
             <li>Limpezas de subestação</li>
           </ul>
@@ -131,7 +130,7 @@
           <h4>Serviço de Engenharia</h4>
           <ul>
             <li>Medição de Grandezas</li>
-            <li>Inspeção de laudos</li>
+            <li>Inspeções Técnicas</li>
             <li>Emissão de laudos e ART</li>
             <li>Startup de Subestações</li>
           </ul>
