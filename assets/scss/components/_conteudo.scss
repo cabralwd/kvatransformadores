@@ -103,7 +103,7 @@
 	}
 }
 
-.slide {
+.slider {
 	position: relative;
 	padding: 30px 0px;
 	height: 350px;
@@ -129,9 +129,17 @@
 		align-items: center;
 		justify-content: center;
 
-		.content-image {
-
+		&.animationR {
+			animation-name: slideAnimateRight;
+			animation-duration: 1s;
 		}
+
+		&.animationL {
+			animation-name: slideAnimateLeft;
+			animation-duration: 1s;
+		}
+
+		.content-image {}
 	}
 
 	.arrow-slide {
@@ -329,6 +337,13 @@
 
 	.arrow-curve {
 		margin-top: 10px;
+
+		img {
+			transform: scale3d(.8, .8, .8) rotate3d(2, 2, 2, 120deg);
+			animation-name: arrowAnimate;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+		}
 	}
 }
 
@@ -384,6 +399,103 @@
 				}
 			}
 		}
+	}
+}
+
+.light-box {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba($dark, .8);
+	display: none;
+
+	.conteudo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		padding: 1em;
+		max-width: 750px;
+		background-color: $c-sec;
+		border: 2px solid $c-pri;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@include tamanho-tela('desktop-up') {
+			flex-wrap: nowrap;
+		}
+
+		.image-produto {
+			width: 430px;
+
+			img {
+				width: inherit;
+			}
+		}
+
+		.close-modal {
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			background-color: $dark;
+			border-radius: 50px;
+			padding: .5em;
+			width: 26px;
+			height: 26px;
+			cursor: pointer;
+
+			@include tamanho-tela('desktop-up') {
+				padding: .2em;
+			}
+
+			&:hover {
+				background-color: $c-pri;
+
+				svg {
+					path {
+						stroke: $light
+					}
+				}
+			}
+
+			svg {
+				path {
+					stroke: $c-pri;
+				}
+			}
+		}
+
+		.description-produto {
+			width: 300px;
+			max-width: 100%;
+
+
+			h3 {
+				font-size: 1.4rem;
+				font-family: 'Modern Machine', Arial, Helvetica, sans-serif;
+				font-style: normal;
+				font-weight: normal;
+				margin: 1em 0;
+
+				@include tamanho-tela('desktop-up') {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
 }
 

@@ -26,23 +26,29 @@
         <p>Com o nosso trabalho evitamos que recursos naturais sejam extraídos,
           e nos posicionamos como uma empresa que colabora com a economia sustentável.</p>
       </div>
-      <div class="slide">
-        <div class="arrow-slide left">
+      <div class="slider" data-slide>
+        <div class="arrow-slide left" data-slide="left">
           <div class="arrow"></div>
         </div>
-        <div class="imagem-slide">
+        <div class="imagem-slide" data-slideItem="1">
           <div class="content-image">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
             <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
           </div>
         </div>
-        <div class="imagem-slide">
+        <div class="imagem-slide" data-slideItem="2">
           <div class="content-image">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
-            <p class="description">Mais de <span class="destaque">25.000</span> <br>unidades entregues</p>
+            <p class="description"><span class="destaque">12 meses</span> <br>de garantia</p>
           </div>
         </div>
-        <div class="arrow-slide right">
+        <div class="imagem-slide" data-slideItem="3">
+          <div class="content-image">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
+            <p class="description"><span class="destaque">Tudo para</span> <br>a sua energia</p>
+          </div>
+        </div>
+        <div class="arrow-slide right" data-slide="right">
           <div class="arrow"></div>
         </div>
       </div>
@@ -91,7 +97,7 @@
       <h3 class="subtitulo-three">Oferecemos a melhor qualidade em:</h3>
 
       <div class="lista-servicos">
-        <div class="servicos-item">
+        <div class="servicos-item" data-servico="1">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-reforma-transformadores.jpg" alt="Reforma de Transformadores">
           <h4>Reforma de Transformadores</h4>
           <ul>
@@ -100,7 +106,7 @@
             <li>Ensaios elétricos</li>
           </ul>
         </div>
-        <div class="servicos-item">
+        <div class="servicos-item" data-servico="2">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-comercializacao-transformadores.jpg" alt="Comercialização de Transformadores">
           <h4>Comercialização de Transformadores</h4>
           <ul>
@@ -109,7 +115,7 @@
             <li>Locação</li>
           </ul>
         </div>
-        <div class="servicos-item">
+        <div class="servicos-item" data-servico="3">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-manutencao-campo.jpg" alt="Manutenção em campo">
           <h4>Manutenção em campo</h4>
           <ul>
@@ -120,7 +126,7 @@
             <li>Limpezas</li>
           </ul>
         </div>
-        <div class="servicos-item">
+        <div class="servicos-item" data-servico="4">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/foto-servico-engenharia.jpg" alt="Serviço de Engenharia">
           <h4>Serviço de Engenharia</h4>
           <ul>

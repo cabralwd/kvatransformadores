@@ -12,7 +12,9 @@ function openMenu() {
     list.classList.remove('close');
   }
 
-  window.navigator.vibrate(200);
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.navigator.vibrate(200);
+  }
 }
 
 const iconM = document.querySelector('[data-menu]'),
@@ -47,7 +49,6 @@ itensMenu.forEach(item => {
 
   function ExeCution(timer, texto) {
     setTimeout(() => {
-      console.log('deu certo', texto);
       texto.classList.remove('no-anima-fade');
       texto.classList.add('anima-fade');
     }, timer);
@@ -65,10 +66,9 @@ itensMenu.forEach(item => {
   const secao = document.querySelector('.sobre');
   let heightS = secao.scrollHeight;
   let heightJ = document.querySelector('.banner').offsetHeight;
-  console.log(heightS);
+
   function nextSection(e) {
     e.preventDefault;
-    console.log('next');
 
     window.scrollTo({
       top: heightJ,
@@ -77,4 +77,75 @@ itensMenu.forEach(item => {
   }
   const btnSection = document.querySelector('.next-section');
   btnSection.addEventListener('click', nextSection);
+})();
+
+// Slide do sobre 
+(() => {
+  let slides = document.querySelectorAll('[data-slideItem]'),
+    btnLeft = document.querySelector('[data-slide="left"]'),
+    btnRight = document.querySelector('[data-slide="right"]');
+  let iterator = 0;
+
+  function slideMove(typeBtn) {
+    let anima;
+    if (typeBtn === 'right') {
+      iterator >= slides.length ? iterator = 1 : iterator++;
+      anima = 'animationR'
+    } else if (typeBtn === 'left') {
+      iterator <= 1 ? iterator = slides.length : iterator--;
+      anima = 'animationL'
+    } else {
+      iterator = 1;
+      anima = '';
+    }
+
+    slides.forEach(item => {
+      if (item.dataset.slideitem === `${iterator}`) {
+        item.style.display = 'flex';
+        item.classList.add(!!anima ? anima : 'no-animate');
+      } else {
+        item.style.display = "none";
+        item.classList.remove('animationR', 'animationL', 'no-animate');
+      }
+    });
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.navigator.vibrate(100);
+    }
+
+  }
+
+  btnRight.addEventListener('click', slideMove.bind(null, btnRight.dataset.slide));
+  btnLeft.addEventListener('click', slideMove.bind(null, btnLeft.dataset.slide));
+
+  slideMove();
+
+})();
+
+// lightbox dos produtos
+(() => {
+  const servicos = document.querySelectorAll('[data-servico]');
+  const modal = document.querySelector('.light-box');
+  const close = document.querySelector('.close-modal');
+  let conteudo = {
+    titulo: '',
+    descricao: [],
+  }
+
+  function getInfosProduto(id) {
+    conteudo.descricao = [];
+    modal.style.display = "block";
+    conteudo.titulo = servicos[id - 1].children[1].innerHTML;
+    for (let i of servicos[id - 1].children[2].children) {
+      conteudo.descricao.push(i.innerText);
+    }
+  }
+
+  servicos.forEach(servico => {
+    servico.addEventListener('click', getInfosProduto.bind(null, servico.dataset.servico));
+  });
+
+  close.addEventListener('click', () => {
+    modal.style.display = "none";
+  });
 })();
