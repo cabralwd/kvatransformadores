@@ -5,13 +5,10 @@
     </div>
     <div class="description-produto">
       <div class="information">
-        <h3>Comercialização de transformadores</h3>
+        <h3></h3>
       </div>
       <div class="whatsapp">
         <ul>
-          <li>Venda</li>
-          <li>Compra</li>
-          <li>Locação</li>
         </ul>
       </div>
     </div>

@@ -127,18 +127,35 @@ itensMenu.forEach(item => {
   const servicos = document.querySelectorAll('[data-servico]');
   const modal = document.querySelector('.light-box');
   const close = document.querySelector('.close-modal');
+  const imageI = modal.querySelector('.image-produto img');
   let conteudo = {
     titulo: '',
-    descricao: [],
+    descricao: []
   }
 
   function getInfosProduto(id) {
     conteudo.descricao = [];
-    modal.style.display = "block";
+    modal.classList.add('openModal');
     conteudo.titulo = servicos[id - 1].children[1].innerHTML;
+
     for (let i of servicos[id - 1].children[2].children) {
       conteudo.descricao.push(i.innerText);
     }
+
+    modal.querySelector('h3').innerHTML = conteudo.titulo
+
+    for (let i of conteudo.descricao) {
+      let newLi = document.createElement('li');
+      modal.querySelector('ul').append(newLi);
+    }
+
+    modal.querySelectorAll('li').forEach((element, i) => {
+      element.innerHTML = conteudo.descricao[i];
+    });
+
+    let imageSrc = imageI.src.split('/');
+    imageSrc[imageSrc.length - 1] = `servico-${id}.jpg`;
+    imageI.src = imageSrc.join('/');
   }
 
   servicos.forEach(servico => {
@@ -146,6 +163,10 @@ itensMenu.forEach(item => {
   });
 
   close.addEventListener('click', () => {
-    modal.style.display = "none";
+    modal.classList.remove('openModal');
+
+    modal.querySelectorAll('li').forEach(element => {
+      element.remove();
+    });
   });
 })();

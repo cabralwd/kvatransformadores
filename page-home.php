@@ -38,14 +38,14 @@
         </div>
         <div class="imagem-slide" data-slideItem="2">
           <div class="content-image">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
-            <p class="description"><span class="destaque">12 meses</span> <br>de garantia</p>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/garantia.svg" alt="Oferecemos 12 meses de garantia">
+            <p class="description">Oferecemos <span class="destaque">12 meses</span> <br>de garantia</p>
           </div>
         </div>
         <div class="imagem-slide" data-slideItem="3">
           <div class="content-image">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/transformador.svg" alt="mais de 25.000 unidades entregues">
-            <p class="description"><span class="destaque">Tudo para</span> <br>a sua energia</p>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/public/imgs/sustentavel.svg" alt="Colaboramos para um planeta mais sustentável">
+            <p class="description">Colaboramos para <span class="destaque"><br>um planeta </span> <br>mais sustentável</p>
           </div>
         </div>
         <div class="arrow-slide right" data-slide="right">

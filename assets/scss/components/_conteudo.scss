@@ -412,6 +412,10 @@
 	background-color: rgba($dark, .8);
 	display: none;
 
+	&.openModal {
+		display: block;
+	}
+
 	.conteudo {
 		position: absolute;
 		top: 50%;
@@ -425,9 +429,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		max-height: calc(100vh - 70px);
+		overflow-y: auto;
 
 		@include tamanho-tela('desktop-up') {
 			flex-wrap: nowrap;
+			max-height: initial;
 		}
 
 		.image-produto {
