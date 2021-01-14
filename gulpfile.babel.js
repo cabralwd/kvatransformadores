@@ -10,11 +10,11 @@ import browserSync from 'browser-sync';
 
 const paths = {
 	styles: {
-		src: 'src/styles/**/*.scss',
+		src: 'src/scss/**/*.scss',
 		dest: 'dist/styles/',
 	},
 	scripts: {
-		src: 'src/scripts/**/*.js',
+		src: 'src/js/**/*.js',
 		dest: 'dist/scripts/',
 	},
 	images: {
@@ -64,8 +64,15 @@ export function images() {
 
 export function views() {
 	return gulp
-		.src('src/**/*.html')
+		.src('src/views/*.html')
 		.pipe(gulp.dest('dist'))
+		.pipe(browserSync.stream());
+}
+
+export function fonts() {
+	return gulp
+		.src('src/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts'))
 		.pipe(browserSync.stream());
 }
 
@@ -73,11 +80,11 @@ export function watch() {
 	gulp.watch(paths.styles.src, styles);
 	gulp.watch(paths.scripts.src, scripts);
 	gulp.watch(paths.images.src, images);
-	gulp.watch('src/**/*.html', views);
+	gulp.watch('src/views/*.html', views);
 	gulp.watch('dist/index.html').on('change', browserSync.reload);
 }
 
-const build = gulp.series(clean, gulp.parallel(styles, scripts, images, views));
+const build = gulp.series(clean, gulp.parallel(styles, scripts, images, views, fonts));
 
 const defaultTask = gulp.parallel(build, serve, watch);
 

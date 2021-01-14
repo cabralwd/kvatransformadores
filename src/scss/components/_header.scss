@@ -102,13 +102,13 @@ header {
 	padding: .3em .5em;
 	width: 54px;
 	height: 54px;
-	background-image: url('../../public/imgs/icon-menu.svg');
+	background-image: url('../../images/icon-menu.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 
 	&.close {
-		background-image: url('../../public/imgs/icon-menu-close.svg');
+		background-image: url('../../images/icon-menu-close.svg');
 	}
 
 	@include tamanho-tela(desktop-up) {
@@ -128,7 +128,7 @@ header {
 		&::before {
 			content: '';
 			position: absolute;
-			background: url('../../public/imgs/efeito-poste.png') repeat-x;
+			background: url('../../images/efeito-poste.png') repeat-x;
 			background-size: contain;
 			background-position: right;
 			width: 100%;

@@ -199,7 +199,7 @@
 		}
 
 		.arrow {
-			background: url('../../public/imgs/icon-arrow-slide.svg') no-repeat;
+			background: url('../../images/icon-arrow-slide.svg') no-repeat;
 			background-size: 12px 21px;
 			background-position: center;
 			display: block;
@@ -264,7 +264,7 @@
 				}
 
 				&::before {
-					content: url('../../public/imgs/icon-energy.svg');
+					content: url('../../images/icon-energy.svg');
 					display: inline-block;
 					margin-right: .3em;
 				}
@@ -376,7 +376,7 @@
 
 				li {
 					&::before {
-						content: url('../../public/imgs/icon-energy.svg');
+						content: url('../../images/icon-energy.svg');
 						display: inline-block;
 						margin-right: .3em;
 					}
